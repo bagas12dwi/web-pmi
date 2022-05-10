@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\InputDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,12 +16,9 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AuthController::class, 'loginIndex']);
 
 Route::get('/login', [AuthController::class, 'loginIndex']);
 Route::get('/register', [AuthController::class, 'registerIndex']);
-Route::get('/admin', function () {
-    return view('admin.admin');
-});
+Route::get('/admin', [DashboardAdminController::class, 'index']);
+Route::get('/inputData', [InputDataController::class, 'index']);

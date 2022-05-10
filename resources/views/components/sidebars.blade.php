@@ -57,7 +57,7 @@
             </li>
             <!-- Heading -->
             <li class="nav-item">
-                <a class="nav-link" href="/product-admin">
+                <a class="nav-link" href="/inputData">
                     <i class="fas fa-fw fa-box-open"></i>
                     <span>Input Data</span></a>
             </li>
