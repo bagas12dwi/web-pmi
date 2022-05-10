@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 Route::get('/login', [AuthController::class, 'loginIndex']);
 Route::get('/register', [AuthController::class, 'registerIndex']);
+Route::get('/admin', function () {
+    return view('admin.admin');
+});

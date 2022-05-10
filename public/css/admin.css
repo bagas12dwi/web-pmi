@@ -1,0 +1,8 @@
+.active-select {
+    background-color: #78a1de;
+    position: relative;
+}
+.select-bar {
+    background-color: #adc6eb;
+    width: 10px;
+}
