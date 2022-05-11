@@ -48,23 +48,27 @@
                     <span>Konfirmasi Pembayaran</span></a>
             </li> --}}
 
-            <li class="nav-item active active-select">
-                <div class="select-bar">
+            <li class="nav-item {{ $title == "Dashboard" ? 'active active-select' : '' }}">
+                <div class=" {{ $title == "Dashboard" ? 'select-bar' : '' }} ">
                     <a class="nav-link" href="/admin">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </div>
             </li>
             <!-- Heading -->
-            <li class="nav-item">
-                <a class="nav-link" href="/inputData">
-                    <i class="fas fa-fw fa-box-open"></i>
-                    <span>Input Data</span></a>
+            <li class="nav-item {{ $title == "Input Data" ? 'active active-select' : '' }}">
+                <div class="{{ $title == "Input Data" ? ' select-bar' : '' }}">
+                    <a class="nav-link" href="/inputData">
+                        <i class="bi bi-pencil-fill"></i>
+                        <span>Input Data</span></a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/user">
-                    <i class="fas fa-fw fa-user"></i>
-                    <span>Reporting</span></a>
+            <li class="nav-item {{ $title == "Reporting" ? 'active active-select' : '' }}">
+                <div class="{{ $title == "Reporting" ? ' select-bar' : '' }}">
+                    <a class="nav-link" href="/reporting">
+                        <i class="bi bi-printer-fill"></i>
+                        <span>Reporting</span></a>
+                </div>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

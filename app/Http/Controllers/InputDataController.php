@@ -8,6 +8,8 @@ class InputDataController extends Controller
 {
     public function index()
     {
-        return view('admin.input-data');
+        return view('admin.input-data', [
+            'title' => 'Input Data'
+        ]);
     }
 }

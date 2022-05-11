@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PMI Admin</title>
+    <title>PMI Admin || {{ $title }}</title>
 
 
     <!-- Custom fonts for this template-->
@@ -47,7 +47,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Test</h1>
+                        <h1 class="h3 mb-0 text-gray-800"> {{$title}} </h1>
                     </div>
 
                     @yield('konten')
