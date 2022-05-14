@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PMI Admin || {{ $title }}</title>
+    <title>PMI Admin | {{ $title }}</title>
 
 
     <!-- Custom fonts for this template-->
@@ -23,6 +23,10 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
     <link href="{{ URL::asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('css/admin.css') }}" rel="stylesheet">
+    <!-- CSS Bootstrap Datepicker -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+
 
 
 </head>
@@ -47,7 +51,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800"> {{$title}} </h1>
+                        <h1 class="h3 mb-0 text-gray-800"> {{ $title }} </h1>
                     </div>
 
                     @yield('konten')
@@ -70,10 +74,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    {{-- @include('components/modal-logout') --}}
-
-
 
     <script src="https://kit.fontawesome.com/3a051b2f60.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -83,7 +83,10 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $('.datepicker').datepicker();
+    </script>
 
     <!-- Custom scripts for all pages-->
     <script src="{{ URL::asset('js/sb-admin-2.min.js') }}"></script>

@@ -16,7 +16,7 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user-circle fa-lg me-2"></i>
                                 <div class="text-dark">
-                                    Admin
+                                    {{ auth()->user()->username }}
                                 </div>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
